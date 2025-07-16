@@ -1,0 +1,86 @@
+🚀 1️⃣ Setup inicial
+1️⃣ cd nome-da-pasta
+
+Entra na pasta do projeto.
+
+2️⃣ npm create vite@latest
+
+Cria projeto React com Vite (o Vite é MUITO mais rápido que Create React App).
+
+3️⃣ npm install ou npm i
+
+Baixa as dependências (node_modules).
+
+4️⃣ npm run dev
+
+Sobe o projeto em modo dev (acessa em localhost:5173).
+
+5️⃣ Prettier
+
+Usado pra formatar e organizar código (pode também automatizar classes do Tailwind e limpar bagunça).
+
+💥 2️⃣ Estrutura rápida do React
+No HTML puro, a gente usava "!" pra gerar boilerplate.
+
+No React, usa o atalho rafce (se tiver ES7+ React Snippets no VSCode), que já cria um componente funcional básico.
+
+🌐 3️⃣ Gerenciamento de rotas (React Router)
+Funciona igual ao conceito de @pages no Blazor, só que no React usamos a lib react-router-dom.
+
+Importação base
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+✅ BrowserRouter
+O "guardião" das rotas.
+
+Envolve toda a app e controla o histórico do navegador.
+
+Sem ele, nada de rotas funcionando.
+
+✅ Routes
+Contêiner que agrupa todos os <Route />.
+
+Pensa como uma "caixa" onde ficam todas as rotas disponíveis.
+
+✅ Route
+Define cada rota individual.
+
+Exemplo:
+
+
+<Route path="/about" element={<About />} />
+Se a URL bater com /about, renderiza o componente <About />.
+
+✅ Link
+Equivalente à tag <a>, mas sem reload da página.
+
+Exemplo:
+
+
+<Link to="/about">Sobre</Link>
+Quando você clica, navega pra /about sem recarregar tudo.
+
+⚡ 4️⃣ Comparação rápida com Blazor
+Ambos são baseados em componentes.
+
+O React também usa rotas e navegação sem reload, igual Blazor.
+
+Só que no React as rotas são definidas no front usando react-router-dom, enquanto no Blazor é via @page.
+
+para entender de tailwind e so entrar na documentação e pesquisar o codigo que ja temos pronto 
+
+
+
+BACKEND 
+cd nome da pasta 
+npm init -y = criar o package que e o nosso arquivo json
+npm i express instalar a biblioteca express
+
+no package json tem que mudar em scipts tem que mudar o test para dev e colocar node --watch que e pra quando ter atualizações não tenha que fechar o servido nem nada, ./ nomde do arquivo index.js.
+
+
+
+
+
+BANCO DE DADOS = mongo
+new project
